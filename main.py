@@ -29,7 +29,7 @@ def prompt_chainable_poc():
     sonnet_3_5_model = build_models()
 
     result, context_filled_prompts = MinimalChainable.run(
-        context={"topic": "Cirrus SR22T aircraft"},
+        context={"topic": "Suzuki Boulevard M109"},
         model=sonnet_3_5_model,
         callable=prompt,
         prompts=[
@@ -66,3 +66,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
